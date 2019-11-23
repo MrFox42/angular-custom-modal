@@ -22,6 +22,9 @@ export class ModalComponent implements OnDestroy {
   @ContentChild('modalBody') body: TemplateRef<any>;
   @ContentChild('modalFooter') footer: TemplateRef<any>;
   @Input() closeOnOutsideClick = true;
+  @Input() hideHeader = false;
+  @Input() hideBody = false;
+  @Input() hideFooter = false;
 
   visible = false;
   visibleAnimate = false;
